@@ -6,7 +6,7 @@
   
   <!-- Primary Meta Tags -->
   <!-- TODO: Replace with your paper title and author names -->
-  <meta name="title" content="PAPER_TITLE - AUTHOR_NAMES">
+  <meta name="title" content="SoundReactor - Anonymous authours">
   <!-- TODO: Write a compelling 150-160 character description of your research -->
   <meta name="description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
   <!-- TODO: Add 5-10 relevant keywords for your research area -->
@@ -74,15 +74,14 @@
 
 
   <!-- TODO: Replace with your paper title and authors -->
-  <title>PAPER_TITLE - AUTHOR_NAMES | Academic Research</title>
-  
+  <title>SoundReactor - Anonymous authors</title>
+
   <!-- Favicon and App Icons -->
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
-  <link rel="apple-touch-icon" href="static/images/favicon.ico">
   
   <!-- Critical CSS - Load synchronously -->
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/index.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg'/>">
   
   <!-- Non-critical CSS - Load asynchronously -->
   <link rel="preload" href="static/css/bulma-carousel.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -100,6 +99,7 @@
   
   <!-- Fonts - Optimized loading -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
   
   <!-- Defer non-critical JavaScript -->
   <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -107,9 +107,92 @@
   <script defer src="static/js/fontawesome.all.min.js"></script>
   <script defer src="static/js/bulma-carousel.min.js"></script>
   <script defer src="static/js/bulma-slider.min.js"></script>
-  <script defer src="static/js/index.js"></script>
-  
   <!-- Structured Data for Academic Papers -->
+   <script>
+        window.DEMO_DATA = [
+          {
+            title: "Sample 1",
+            files: [
+              {label: "Ground-truth", src: "static/videos/WeeWIjPb9nM_scene-195/gt.mp4"},
+              {label: "V-AURA", src: "static/videos/WeeWIjPb9nM_scene-195/vaura.mp4"},
+              {label: "Ours-Diffusion", src: "static/videos/WeeWIjPb9nM_scene-195/sr_diff.mp4"},
+              {label: "Ours-ECT (NFE=1)", src: "static/videos/WeeWIjPb9nM_scene-195/ect_1step.mp4"},
+              {label: "Ours-ECT (NFE=4)", src: "static/videos/WeeWIjPb9nM_scene-195/ect_4step.mp4"},
+            ]
+          },
+          {
+            title: "Sample 2",
+            files: [
+              {label: "Ground-truth", src: "static/videos/P8F7UBx5jXM_scene-202/gt.mp4"},
+              {label: "V-AURA", src: "static/videos/P8F7UBx5jXM_scene-202/vaura.mp4"},
+              {label: "Ours-Diffusion", src: "static/videos/P8F7UBx5jXM_scene-202/sr_diff.mp4"},
+              {label: "Ours-ECT (NFE=1)", src: "static/videos/P8F7UBx5jXM_scene-202/ect_1step.mp4"},
+              {label: "Ours-ECT (NFE=4)", src: "static/videos/P8F7UBx5jXM_scene-202/ect_4step.mp4"},
+            ]
+          },
+          {
+            title: "Sample 3",
+            files: [
+              {label: "Ground-truth", src: "static/videos/W2A_PcIhUVM_scene-149/gt.mp4"},
+              {label: "V-AURA", src: "static/videos/W2A_PcIhUVM_scene-149/vaura.mp4"},
+              {label: "Ours-Diffusion", src: "static/videos/W2A_PcIhUVM_scene-149/sr_diff.mp4"},
+              {label: "Ours-ECT (NFE=1)", src: "static/videos/W2A_PcIhUVM_scene-149/ect_1step.mp4"},
+              {label: "Ours-ECT (NFE=4)", src: "static/videos/W2A_PcIhUVM_scene-149/ect_4step.mp4"},
+            ]
+          },
+          {
+            title: "Sample 4",
+            files: [
+              {label: "Ground-truth", src: "static/videos/6rALm87VODU_scene-28/gt.mp4"},
+              {label: "V-AURA", src: "static/videos/6rALm87VODU_scene-28/vaura.mp4"},
+              {label: "Ours-Diffusion", src: "static/videos/6rALm87VODU_scene-28/sr_diff.mp4"},
+              {label: "Ours-ECT (NFE=1)", src: "static/videos/6rALm87VODU_scene-28/ect_1step.mp4"},
+              {label: "Ours-ECT (NFE=4)", src: "static/videos/6rALm87VODU_scene-28/ect_4step.mp4"},
+            ]
+          },
+          {
+            title: "Sample 5",
+            files: [
+              {label: "Ground-truth", src: "static/videos/XrIKxSm5EVI_scene-102/gt.mp4"},
+              {label: "V-AURA", src: "static/videos/XrIKxSm5EVI_scene-102/vaura.mp4"},
+              {label: "Ours-Diffusion", src: "static/videos/XrIKxSm5EVI_scene-102/sr_diff.mp4"},
+              {label: "Ours-ECT (NFE=1)", src: "static/videos/XrIKxSm5EVI_scene-102/ect_1step.mp4"},
+              {label: "Ours-ECT (NFE=4)", src: "static/videos/XrIKxSm5EVI_scene-102/ect_4step.mp4"},
+            ]
+          },
+          {
+            title: "Sample 6",
+            files: [
+              {label: "Ground-truth", src: "static/videos/5wUecxcGCGI_scene-1179/gt.mp4"},
+              {label: "V-AURA", src: "static/videos/5wUecxcGCGI_scene-1179/vaura.mp4"},
+              {label: "Ours-Diffusion", src: "static/videos/5wUecxcGCGI_scene-1179/sr_diff.mp4"},
+              {label: "Ours-ECT (NFE=1)", src: "static/videos/5wUecxcGCGI_scene-1179/ect_1step.mp4"},
+              {label: "Ours-ECT (NFE=4)", src: "static/videos/5wUecxcGCGI_scene-1179/ect_4step.mp4"},
+            ]
+          },
+          {
+            title: "Sample 7",
+            files: [
+              {label: "Ground-truth", src: "static/videos/4keUlXV_z5w_scene-147/gt.mp4"},
+              {label: "V-AURA", src: "static/videos/4keUlXV_z5w_scene-147/vaura.mp4"},
+              {label: "Ours-Diffusion", src: "static/videos/4keUlXV_z5w_scene-147/sr_diff.mp4"},
+              {label: "Ours-ECT (NFE=1)", src: "static/videos/4keUlXV_z5w_scene-147/ect_1step.mp4"},
+              {label: "Ours-ECT (NFE=4)", src: "static/videos/4keUlXV_z5w_scene-147/ect_4step.mp4"},
+            ]
+          },
+          {
+            title: "Sample 8",
+            files: [
+              {label: "Ground-truth", src: "static/videos/4I1MBmrGloU_scene-29/gt.mp4"},
+              {label: "V-AURA", src: "static/videos/4I1MBmrGloU_scene-29/vaura.mp4"},
+              {label: "Ours-Diffusion", src: "static/videos/4I1MBmrGloU_scene-29/sr_diff.mp4"},
+              {label: "Ours-ECT (NFE=1)", src: "static/videos/4I1MBmrGloU_scene-29/ect_1step.mp4"},
+              {label: "Ours-ECT (NFE=4)", src: "static/videos/4I1MBmrGloU_scene-29/ect_4step.mp4"},
+            ]
+          },
+        ];
+    </script>
+  <script defer src="static/js/index.js"></script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -170,7 +253,6 @@
     "@type": "Organization",
     "name": "INSTITUTION_OR_LAB_NAME",
     "url": "https://YOUR_INSTITUTION_WEBSITE.com",
-    "logo": "https://YOUR_DOMAIN.com/static/images/favicon.ico",
     "sameAs": [
       "https://twitter.com/YOUR_TWITTER_HANDLE",
       "https://github.com/YOUR_GITHUB_USERNAME"
@@ -187,42 +269,42 @@
   </button>
 
   <!-- More Works Dropdown -->
-  <div class="more-works-container">
-    <button class="more-works-btn" onclick="toggleMoreWorks()" title="View More Works from Our Lab">
+  <!-- <div class="more-works-container"> -->
+    <!-- <button class="more-works-btn" onclick="toggleMoreWorks()" title="View More Works from Our Lab">
       <i class="fas fa-flask"></i>
       More Works
       <i class="fas fa-chevron-down dropdown-arrow"></i>
-    </button>
-    <div class="more-works-dropdown" id="moreWorksDropdown">
+    </button> -->
+    <!-- <div class="more-works-dropdown" id="moreWorksDropdown">
       <div class="dropdown-header">
         <h4>More Works from Our Lab</h4>
         <button class="close-btn" onclick="toggleMoreWorks()">
           <i class="fas fa-times"></i>
         </button>
-      </div>
-      <div class="works-list">
+      </div> -->
+      <!-- <div class="works-list"> -->
         <!-- TODO: Replace with your lab's related works -->
-        <a href="https://arxiv.org/abs/PAPER_ID_1" class="work-item" target="_blank">
-          <div class="work-info">
+        <!-- <a href="https://arxiv.org/abs/PAPER_ID_1" class="work-item" target="_blank">
+          <div class="work-info"> -->
             <!-- TODO: Replace with actual paper title -->
-            <h5>Paper Title 1</h5>
+            <!-- <h5>Paper Title 1</h5> -->
             <!-- TODO: Replace with brief description -->
-            <p>Brief description of the work and its main contribution.</p>
+            <!-- <p>Brief description of the work and its main contribution.</p> -->
             <!-- TODO: Replace with venue and year -->
-            <span class="work-venue">Conference/Journal 2024</span>
-          </div>
+            <!-- <span class="work-venue">Conference/Journal 2024</span> -->
+          <!-- </div>
           <i class="fas fa-external-link-alt"></i>
-        </a>
+        </a> -->
         <!-- TODO: Add more related works or remove extra items -->
-        <a href="https://arxiv.org/abs/PAPER_ID_2" class="work-item" target="_blank">
+        <!-- <a href="https://arxiv.org/abs/PAPER_ID_2" class="work-item" target="_blank">
           <div class="work-info">
             <h5>Paper Title 2</h5>
             <p>Brief description of the work and its main contribution.</p>
             <span class="work-venue">Conference/Journal 2023</span>
           </div>
           <i class="fas fa-external-link-alt"></i>
-        </a>
-        <a href="https://arxiv.org/abs/PAPER_ID_3" class="work-item" target="_blank">
+        </a> -->
+        <!-- <a href="https://arxiv.org/abs/PAPER_ID_3" class="work-item" target="_blank">
           <div class="work-info">
             <h5>Paper Title 3</h5>
             <p>Brief description of the work and its main contribution.</p>
@@ -232,7 +314,7 @@
         </a>
       </div>
     </div>
-  </div>
+  </div> -->
 
   <main id="main-content">
   <section class="hero">
@@ -241,28 +323,28 @@
         <div class="columns is-centered">
           <div class="column has-text-centered">
             <!-- TODO: Replace with your paper title -->
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
+            <h1 class="title is-1 publication-title">SoundReactor: Frame-level Online Video-to-Audio Generation</h1>
             <div class="is-size-5 publication-authors">
               <!-- TODO: Replace with your paper authors and their personal links -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
-                <span class="author-block">
+                <a>Anonymous authours</a>
+                <!-- <span class="author-block">
                   <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
                   <span class="author-block">
                     <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
                   </span>
-                  </div>
+                  </div> -->
 
-                  <div class="is-size-5 publication-authors">
+                  <!-- <div class="is-size-5 publication-authors"> -->
                     <!-- TODO: Replace with your institution and conference/journal info -->
-                    <span class="author-block">Institution Name<br>Conference name and year</span>
+                    <!-- <span class="author-block">Institution Name<br>Conference name and year</span> -->
                     <!-- TODO: Remove this line if no equal contribution -->
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
-                  </div>
+                    <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
+                  <!-- </div> -->
 
-                  <div class="column has-text-centered">
+                  <!-- <div class="column has-text-centered">
                     <div class="publication-links">
-                         <!-- TODO: Update with your arXiv paper ID -->
+                         TODO: Update with your arXiv paper ID
                       <span class="link-block">
                         <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
@@ -271,10 +353,10 @@
                         </span>
                         <span>Paper</span>
                       </a>
-                    </span>
+                    </span> -->
 
                     <!-- TODO: Add your supplementary material PDF or remove this section -->
-                    <span class="link-block">
+                    <!-- <span class="link-block">
                       <a href="static/pdfs/supplementary_material.pdf" target="_blank"
                       class="external-link button is-normal is-rounded is-dark">
                       <span class="icon">
@@ -282,10 +364,10 @@
                       </span>
                       <span>Supplementary</span>
                     </a>
-                  </span>
+                  </span> -->
 
                   <!-- TODO: Replace with your GitHub repository URL -->
-                  <span class="link-block">
+                  <!-- <span class="link-block">
                     <a href="https://github.com/YOUR REPO HERE" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
@@ -293,16 +375,16 @@
                     </span>
                     <span>Code</span>
                   </a>
-                </span>
+                </span> -->
 
                 <!-- TODO: Update with your arXiv paper ID -->
-                <span class="link-block">
+                <!-- <span class="link-block">
                   <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                     <i class="ai ai-arxiv"></i>
                   </span>
-                  <span>arXiv</span>
+                  <span>arXiv</span> -->
                 </a>
               </span>
             </div>
@@ -315,21 +397,21 @@
 
 
 <!-- Teaser video-->
-<section class="hero teaser">
+<!-- <section class="hero teaser">
   <div class="container is-max-desktop">
-    <div class="hero-body">
+    <div class="hero-body"> -->
       <!-- TODO: Replace with your teaser video -->
-      <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata">
+      <!-- <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata"> -->
         <!-- TODO: Add your video file path here -->
-        <source src="static/videos/banner_video.mp4" type="video/mp4">
-      </video>
+        <!-- <source src="static/videos/banner_video.mp4" type="video/mp4"> -->
+      <!-- </video> -->
       <!-- TODO: Replace with your video description -->
-      <h2 class="subtitle has-text-centered">
+      <!-- <h2 class="subtitle has-text-centered">
         Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
       </h2>
     </div>
   </div>
-</section>
+</section> -->
 <!-- End teaser video -->
 
 <!-- Paper abstract -->
@@ -341,7 +423,12 @@
         <div class="content has-text-justified">
           <!-- TODO: Replace with your paper abstract -->
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            Prevailing Video-to-Audio (V2A) models operate offline, assuming an entire video sequence or a chunk of frames is available beforehand. 
+            This critically limits their use in interactive contexts such as live content creation and the rapidly advancing field of generative world models. 
+            To address this critical gap, we introduce the novel task of frame-level online V2A generation, where a model autoregressively generates audio from video without access to future video frames, and propose SoundReactor, its first simple yet effective framework. 
+            Our design enforces end-to-end causality and targets low per-frame latency with audio-visual synchronization.
+            On a benchmark of diverse gameplay videos from AAA titles, SoundReactor successfully generates semantically and temporally synchronized, high-quality full-band stereo audio, validated by both objective and human evaluations, with low end-to-end per-frame latency (\ks{numbers}).
+            Furthermore, it demonstrates a zero-shot capability on context-window extension up to twice the training window without significant performance degradation. 
           </p>
         </div>
       </div>
@@ -350,37 +437,101 @@
 </section>
 <!-- End paper abstract -->
 
+<!-- Figures -->
+<section class="section" id="demo-samples">
+  <div class="container is-max-fullhd"> 
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-12">
+
+        <h2 class="title is-3">Our Scope and Framework</h2>
+    <!-- Figure 1 -->
+    <figure class="png-figure">
+      <img src="static/images/nse_task_def_horizon.png"
+           alt="Model overview of the frame-level online V2A pipeline"
+           loading="lazy" width="480" height="auto">
+      <figcaption>
+        <span class="fig-title">Figure 1.</span>
+        Our scope is a frame-level online video-to-audio (V2A) generation task, 
+        <strong>where future video frames are not available in advance.</strong><br>
+        This contrasts with the conventional offline V2A task, where an entire video sequence or a chunk of frames is available in advance.
+      </figcaption>
+    </figure>
+
+    <!-- Figure 2 -->
+    <figure class="png-figure">
+      <img src="static/images/nse_overview.png"
+           alt="Training setup: datasets, losses, and streaming conditioning"
+           loading="lazy" width="480" height="auto">
+      <figcaption>
+        <span class="fig-title">Figure 2.</span>
+        Overview of SoundReactor. Our framework has three components: <br>(a)
+        Video token modeling, (b) Audio token modeling, and (c) Multimodal AR transformer with diffusion/ECT
+        head.
+      </figcaption>
+    </figure>
+
+  </div>
+</section>
+
+
+
+
+
+<!-- Demo Samples -->
+<section class="section" id="demo-samples">
+  <div class="container is-max-fullhd"> 
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-12">
+
+        <h2 class="title is-3">Demo Samples</h2>
+        <p class="subtitle is-5 has-text-weight-semibold" style="margin-bottom:1rem">
+          All models are trained on the same dataset. V-AURA<sup id="fn-1"><a class="ref" href="#ref-1">[1]</a></sup> is an offline AR V2A model. <br>
+          Although it is the most analogous state-of-the-art model to our setup, <br> it is not directly applicable to the frame-level online V2A task<br>
+          <strong>Our models are frame-level online V2A models.</strong>
+        </p>
+
+        <div id="demo-grid"></div>
+
+        <div class="has-text-centered" style="margin-top:2rem">
+          <a class="button is-small is-dark is-rounded" href="more.html">More samples →</a>
+        </div>
+
+      </div> <!-- /.column -->
+    </div>   <!-- /.columns -->
+  </div>     <!-- /.container -->
+</section>
+
 
 <!-- Image carousel -->
-<section class="hero is-small">
+<!-- <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
+       <div class="item"> -->
         <!-- TODO: Replace with your research result images -->
-        <img src="static/images/carousel1.jpg" alt="First research result visualization" loading="lazy"/>
+        <!-- <img src="static/images/carousel1.jpg" alt="First research result visualization" loading="lazy"/> -->
         <!-- TODO: Replace with description of this result -->
-        <h2 class="subtitle has-text-centered">
-          First image description.
+        <!-- <h2 class="subtitle has-text-centered"> -->
+          <!-- First image description.
         </h2>
       </div>
-      <div class="item">
+      <div class="item"> -->
         <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="Second research result visualization" loading="lazy"/>
+        <!-- <img src="static/images/carousel2.jpg" alt="Second research result visualization" loading="lazy"/>
         <h2 class="subtitle has-text-centered">
           Second image description.
         </h2>
       </div>
-      <div class="item">
+      <div class="item"> -->
         <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="Third research result visualization" loading="lazy"/>
+        <!-- <img src="static/images/carousel3.jpg" alt="Third research result visualization" loading="lazy"/>
         <h2 class="subtitle has-text-centered">
          Third image description.
        </h2>
      </div>
-     <div class="item">
+     <div class="item"> -->
       <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="Fourth research result visualization" loading="lazy"/>
+      <!-- <img src="static/images/carousel4.jpg" alt="Fourth research result visualization" loading="lazy"/>
       <h2 class="subtitle has-text-centered">
         Fourth image description.
       </h2>
@@ -388,64 +539,64 @@
   </div>
 </div>
 </div>
-</section>
+</section> -->
 <!-- End image carousel -->
 
 
 
 
 <!-- Youtube video -->
-<section class="hero is-small is-light">
+<!-- <section class="hero is-small is-light">
   <div class="hero-body">
-    <div class="container">
+    <div class="container"> -->
       <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
+      <!-- <h2 class="title is-3">Video Presentation</h2>
       <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
+        <div class="column is-four-fifths"> -->
           
-          <div class="publication-video">
+          <!-- <div class="publication-video"> -->
             <!-- TODO: Replace with your YouTube video ID -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <!-- <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
           </div>
         </div>
       </div>
     </div>
   </div>
-</section>
+</section> -->
 <!-- End youtube video -->
 
 
 <!-- Video carousel -->
-<section class="hero is-small">
+<!-- <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
       <h2 class="title is-3">Another Carousel</h2>
       <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
+        <div class="item item-video1"> -->
           <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video1" controls muted loop height="100%" preload="metadata">
+          <!-- <video poster="" id="video1" controls muted loop height="100%" preload="metadata"> -->
             <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4" type="video/mp4">
-          </video>
+            <!-- <source src="static/videos/carousel1.mp4" type="video/mp4"> -->
+          <!-- </video>
+        </div> -->
+        <!-- <div class="item item-video2"> -->
+          <!-- TODO: Add poster image for better preview -->
+          <!-- <video poster="" id="video2" controls muted loop height="100%" preload="metadata"> -->
+            <!-- Your video file here -->
+            <!-- <source src="static/videos/carousel2.mp4" type="video/mp4"> -->
+          <!-- </video>
         </div>
-        <div class="item item-video2">
+        <div class="item item-video3"> -->
           <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video2" controls muted loop height="100%" preload="metadata">
+          <!-- <video poster="" id="video3" controls muted loop height="100%" preload="metadata"> -->
             <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video3" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4" type="video/mp4">
+            <!-- <source src="static/videos/carousel3.mp4" type="video/mp4">
           </video>
         </div>
       </div>
     </div>
   </div>
-</section>
+</section> -->
 <!-- End video carousel -->
 
 
@@ -454,24 +605,24 @@
 
 
 <!-- Paper poster -->
-<section class="hero is-small is-light">
+<!-- <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title">Poster</h2>
+      <h2 class="title">Poster</h2> -->
 
       <!-- TODO: Replace with your poster PDF -->
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
+      <!-- <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
           </iframe>
         
       </div>
     </div>
-  </section>
+  </section> -->
 <!--End paper poster -->
 
 
 
 <!--BibTex citation -->
-  <section class="section" id="BibTeX">
+  <!-- <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <div class="bibtex-header">
         <h2 class="title">BibTeX</h2>
@@ -488,8 +639,20 @@
   url={https://your-domain.com/your-project-page}
 }</code></pre>
     </div>
-</section>
+</section> -->
 <!--End BibTex citation -->
+<!-- References -->
+<section class="section" id="references">
+  <div class="container is-max-desktop">
+    <h2 class="title is-4">References</h2>
+    <ol class="ref-list">
+      <li id="ref-1">
+        I. Viertola, V. Iashin and E. Rahtu, "Temporally Aligned Audio for Video with Autoregression," ICASSP 2025
+        <!-- <a href="#fn-1" class="back-link" aria-label="Back to citation">↩︎</a> -->
+      </li>
+    </ol>
+  </div>
+</section>
 
 
   <footer class="footer">
