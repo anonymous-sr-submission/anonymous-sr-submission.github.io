@@ -431,7 +431,7 @@
             Our model's backbone is a decoder-only causal transformer over continuous audio latents.
             For vision conditioning, it leverages grid (patch) features from the smallest variant of the DINOv2 vision encoder, which are aggregated into a single token per frame to maintain end-to-end causality and efficiency. 
             The model is trained through a diffusion pre-training followed by consistency fine-tuning to accelerate the diffusion head decoding.
-            On a benchmark of diverse gameplay videos from AAA titles, our model successfully generates semantically and temporally synchronized, high-quality full-band stereo audio, validated by both objective and human evaluations, at low per-frame token-level latency (26.6ms for NFE=1, 30.3ms for NFE=4 on the head with 30FPS, 480p video using a single H100.).
+            On a benchmark of diverse gameplay videos from AAA titles, our model successfully generates semantically and temporally synchronized, high-quality full-band stereo audio, validated by both objective and human evaluations, at low per-frame token-level latency (26.6ms for the head NFE=1, 30.3ms for NFE=4 with 30FPS, 480p video using a single H100.).
           </p>
         </div>
       </div>
