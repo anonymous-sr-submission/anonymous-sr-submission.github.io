@@ -423,12 +423,15 @@
         <div class="content has-text-justified">
           <!-- TODO: Replace with your paper abstract -->
           <p>
-            Prevailing Video-to-Audio (V2A) models operate offline, assuming an entire video sequence or a chunk of frames is available beforehand. 
-            This critically limits their use in interactive contexts such as live content creation and the rapidly advancing field of generative world models. 
-            To address this critical gap, we introduce the novel task of frame-level online V2A generation, where a model autoregressively generates audio from video without access to future video frames, and propose SoundReactor, its first simple yet effective framework. 
+            Prevailing Video-to-Audio (V2A) models operate offline, assuming an entire video sequence or a chunk of frames is available beforehand.
+            This critically limits their use in interactive applications such as live content creation and emerging generative world models. 
+            To address this gap, we introduce the novel task of frame-level online V2A generation, where a model autoregressively generates audio from video without access to future video frames.
+            Furthermore, we propose <strong>SoundReactor</strong>, to the best of our knowledge, the first simple yet effective framework explicitly tailored for this task.
             Our design enforces end-to-end causality and targets low per-frame latency with audio-visual synchronization.
-            On a benchmark of diverse gameplay videos from AAA titles, SoundReactor successfully generates semantically and temporally synchronized, high-quality full-band stereo audio, validated by both objective and human evaluations, with low end-to-end per-frame latency (\ks{numbers}).
-            Furthermore, it demonstrates a zero-shot capability on context-window extension up to twice the training window without significant performance degradation. 
+            Our model's backbone is a decoder-only causal transformer over continuous audio latents.
+            For vision conditioning, it leverages grid (patch) features from the smallest variant of the DINOv2 vision encoder, which are aggregated into a single token per frame to maintain end-to-end causality and efficiency. 
+            The model is trained through a diffusion pre-training followed by consistency fine-tuning to accelerate the diffusion head decoding.
+            On a benchmark of diverse gameplay videos from AAA titles, our model successfully generates semantically and temporally synchronized, high-quality full-band stereo audio, validated by both objective and human evaluations, at low per-frame token-level latency (26.6ms for NFE=1, 30.3ms for NFE=4 on the head with 30FPS, 480p video using a single H100.).
           </p>
         </div>
       </div>
