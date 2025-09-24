@@ -426,7 +426,7 @@
             Prevailing Video-to-Audio (V2A) models operate offline, assuming an entire video sequence or chunks of frames are available beforehand.
             This critically limits their use in interactive applications such as live content creation and emerging generative world models. 
             To address this gap, we introduce the novel task of frame-level online V2A generation, where a model autoregressively generates audio from video without access to future video frames.
-            Furthermore, we propose SoundReactor, to the best of our knowledge, the first simple yet effective framework explicitly tailored for this task.
+            Furthermore, we propose SoundReactor, which, to the best of our knowledge, is the first simple yet effective framework explicitly tailored for this task.
             Our design enforces end-to-end causality and targets low per-frame latency with audio-visual synchronization.
             Our model's backbone is a decoder-only causal transformer over continuous audio latents.
             For vision conditioning, it leverages grid (patch) features from the smallest variant of the DINOv2 vision encoder, which are aggregated into a single token per frame to maintain end-to-end causality and efficiency. 
@@ -456,7 +456,7 @@
         <span class="fig-title">Figure 1.</span>
         Our scope is a frame-level online video-to-audio (V2A) generation task, 
         <strong>where future video frames are not available in advance.</strong><br>
-        This contrasts with the conventional offline V2A task, where an entire video sequence or a chunk of frames is available in advance.
+        This contrasts with the conventional offline V2A task, where an entire video sequence or chunks of frames are available in advance.
       </figcaption>
     </figure>
 
@@ -469,7 +469,7 @@
         <span class="fig-title">Figure 2.</span>
         Overview of SoundReactor. Our framework has three components: <br>(a)
         Video token modeling, (b) Audio token modeling, and (c) Multimodal AR transformer with diffusion/ECT
-        head.
+        head. Our target is to introduce a simple yet effective framework for frame-level online V2A task.
       </figcaption>
     </figure>
 
@@ -490,7 +490,8 @@
         <p class="subtitle is-5 has-text-weight-semibold" style="margin-bottom:1rem">
           All models are trained on the same dataset. V-AURA<sup id="fn-1"><a class="ref" href="#ref-1">[1]</a></sup> is the state-of-the-art offline AR V2A model. <br>
           Although it is the most analogous model to our setup, <br> it is not directly applicable to the frame-level online V2A task (See the manuscript in detail.).<br>
-          To our best knowledge, <strong>our models are the first frame-level online V2A models.</strong>
+          To our best knowledge, <strong>our models are the first frame-level online V2A models.</strong><br>
+          Among our models, Ours-ECT (NFE=4) performs the best.
         </p>
 
         <div id="demo-grid"></div>
