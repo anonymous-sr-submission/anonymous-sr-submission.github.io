@@ -454,7 +454,7 @@
            loading="lazy" width="480" height="auto">
       <figcaption>
         <span class="fig-title">Figure 1.</span>
-        Our scope is a frame-level online video-to-audio (V2A) generation task, 
+        Our scope is the frame-level online video-to-audio (V2A) generation task, 
         <strong>where future video frames are not available in advance.</strong><br>
         This contrasts with the conventional offline V2A task, where an entire video sequence or chunks of frames are available in advance.
       </figcaption>
@@ -469,7 +469,7 @@
         <span class="fig-title">Figure 2.</span>
         Overview of SoundReactor. Our framework has three components: <br>(a)
         Video token modeling, (b) Audio token modeling, and (c) Multimodal AR transformer with diffusion/ECT
-        head. Our target is to introduce a simple yet effective framework for frame-level online V2A task.
+        head. <br> We propose a simple yet effective framework for the frame-level online V2A task.
       </figcaption>
     </figure>
 
@@ -486,9 +486,9 @@
     <div class="columns is-centered has-text-centered">
       <div class="column is-12">
 
-        <h2 class="title is-3">Demo Samples</h2>
+        <h2 class="title is-3">Demo Samples on OGameData<sup id="fn-1"><a class="ref" href="#ref-1">[1]</a></sup></h2>
         <p class="subtitle is-5 has-text-weight-semibold" style="margin-bottom:1rem">
-          All models are trained on the same dataset. V-AURA<sup id="fn-1"><a class="ref" href="#ref-1">[1]</a></sup> is the state-of-the-art offline AR V2A model. <br>
+          All models are trained on the same dataset. V-AURA<sup id="fn-1"><a class="ref" href="#ref-1">[2]</a></sup> is the state-of-the-art offline AR V2A model. <br>
           Although it is the most analogous model to our setup, <br> it is not directly applicable to the frame-level online V2A task (See the manuscript in detail.).<br>
           To our best knowledge, <strong>our models are the first frame-level online V2A models.</strong><br>
           Among our models, Ours-ECT (NFE=4) performs the best.
@@ -651,7 +651,15 @@
     <h2 class="title is-4">References</h2>
     <ol class="ref-list">
       <li id="ref-1">
+        H. Che, X. He, Q. Liu, C. Jin and H. Chen, "Gamegen-x: Interactive open-world game video generation," ICLR 2025
+        <!-- <a href="#fn-1" class="back-link" aria-label="Back to citation">↩︎</a> -->
+      </li>
+      <li id="ref-2">
         I. Viertola, V. Iashin and E. Rahtu, "Temporally Aligned Audio for Video with Autoregression," ICASSP 2025
+        <!-- <a href="#fn-1" class="back-link" aria-label="Back to citation">↩︎</a> -->
+      </li>
+      <li id="ref-3">
+        H. Chen, W. Xie, A. Vedaldi and A. Zisserman, , "VGGSound: A Large-scale Audio-Visual Dataset," ICASSP 2020
         <!-- <a href="#fn-1" class="back-link" aria-label="Back to citation">↩︎</a> -->
       </li>
     </ol>

@@ -808,3 +808,4 @@ sup a.ref:hover { text-decoration: underline; }
 .ref-list li { margin-bottom: .6rem; line-height: 1.6; }
 .back-link { margin-left: .4rem; text-decoration: none; }
 .back-link:hover { text-decoration: underline; }
+#demo-samples.no-row-titles .demo-row-head { display: none !important; }
